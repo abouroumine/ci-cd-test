@@ -8,4 +8,5 @@ import (
 func main() {
 	x, y := 20, 10
 	fmt.Println(compute.Add(x, y))
+	fmt.Println(compute.Multi(x, y))
 }
