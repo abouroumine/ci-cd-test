@@ -5,7 +5,7 @@ import "testing"
 func TestAdd(t *testing.T) {
 	x, y := 1, 2
 	if Add(x, y) != x+y {
-		t.Errorf("Error in Computation")
+		t.Errorf("Error in Add Computation")
 	}
 }
 
@@ -20,7 +20,14 @@ func TestTableAdd(t *testing.T) {
 	}
 	for _, v := range table {
 		if Add(v.x, v.y) != v.expected {
-			t.Errorf("Error in Computation")
+			t.Errorf("Error in Add Computation")
 		}
+	}
+}
+
+func TestMulti(t *testing.T) {
+	x, y := 1, 2
+	if Multi(x, y) != x*y {
+		t.Errorf("Error in Multi Computation")
 	}
 }
